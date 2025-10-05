@@ -165,31 +165,33 @@ class WeatherDatasetCreator:
             test_dataset = WeatherDataset(X_test, y_test)
 
             # Configuración optimizada para DataLoaders
-            loader_config = {
+            loader_config_base = {
                 'batch_size': TRAINING_CONFIG['batch_size'],
                 'num_workers': 2,  # Usar workers para mejor rendimiento
                 'pin_memory': True,  # Transferencia GPU más rápida
                 'persistent_workers': True,  # Mantener workers activos
                 'prefetch_factor': 2,  # Pre-cargar batches
-                'drop_last': True  # Eliminar último batch si no está completo
             }
 
             train_loader = DataLoader(
                 train_dataset,
                 shuffle=True,
-                **loader_config
+                drop_last=True,  # Drop last para train (batches uniformes)
+                **loader_config_base
             )
 
             val_loader = DataLoader(
                 val_dataset,
                 shuffle=False,
-                **loader_config
+                drop_last=False,  # NO drop last para val (usar todas las muestras)
+                **loader_config_base
             )
 
             test_loader = DataLoader(
                 test_dataset,
                 shuffle=False,
-                **loader_config
+                drop_last=False,  # NO drop last para test (usar todas las muestras)
+                **loader_config_base
             )
 
             dataset_info = {

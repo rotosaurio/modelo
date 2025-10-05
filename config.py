@@ -69,19 +69,19 @@ ERA5_CONFIG = {
 # Arquitectura del modelo
 MODEL_CONFIG = {
     "input_size": None,  # Se calculará dinámicamente basado en features
-    "hidden_size": 32,   # Tamaño original que funcionó bien
-    "num_layers": 1,     # Una sola capa para simplicidad
+    "hidden_size": 128,   # Optimizado para RTX 3050 (era 32)
+    "num_layers": 2,      # 2 capas para mejor capacidad (era 1)
     "output_steps": OUTPUT_STEPS,
-    "dropout": 0.1,      # Dropout más bajo
-    "bidirectional": False  # Deshabilitado para simplicidad inicial
+    "dropout": 0.2,       # Dropout para evitar overfitting
+    "bidirectional": True  # Activado para mejor contexto temporal (era False)
 }
 
 # Entrenamiento
 TRAINING_CONFIG = {
-    "batch_size": 8,   # Batch size más razonable pero conservador
+    "batch_size": 64,   # Optimizado para GPU RTX 3050 (era 8)
     "learning_rate": 1e-3,
-    "num_epochs": 50,  # Más épocas para mejor convergencia
-    "patience": 10,    # Más paciencia para encontrar mejor modelo
+    "num_epochs": 100,  # Más épocas para mejor convergencia (era 50)
+    "patience": 15,     # Más paciencia para encontrar mejor modelo (era 10)
     "validation_split": 0.15,  # Balance entre train/val
     "test_split": 0.15,        # Más datos para entrenamiento
     "random_seed": 42

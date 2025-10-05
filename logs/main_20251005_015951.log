@@ -1,0 +1,39 @@
+2025-10-05 01:59:51,334 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-05 01:59:51,335 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-05 01:59:51,338 - INFO - Logging configurado. Archivo: C:\Users\andre\OneDrive\Desktop\modelospaceapps\logs\training_20251005_015951.log
+2025-10-05 01:59:51,339 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-05 01:59:51,342 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-05 01:59:51,342 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-05 01:59:51,342 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-05 01:59:51,344 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-05 01:59:51,344 - INFO - Cargando modelo y artefactos...
+2025-10-05 01:59:51,346 - INFO - Información del dataset cargada: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\dataset_info.pkl
+2025-10-05 01:59:51,432 - INFO - Hiperparámetros cargados: input_size=20, hidden_size=32, model_type=simple
+2025-10-05 01:59:53,530 - INFO - Trainer inicializado en dispositivo: cuda
+2025-10-05 01:59:53,677 - INFO - Validando hiperparámetros: guardados={'input_size': 20, 'hidden_size': 32, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}, actuales={'input_size': 20, 'hidden_size': 32, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}
+2025-10-05 01:59:53,692 - INFO - Modelo cargado correctamente: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\weather_model.pt
+2025-10-05 01:59:53,693 - INFO - Escalador cargado: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\scaler.pkl
+2025-10-05 01:59:53,694 - ERROR - Error inesperado cargando modelo: pop from empty list
+2025-10-05 01:59:53,737 - ERROR - Traceback (most recent call last):
+  File "C:\Users\andre\OneDrive\Desktop\modelospaceapps\predict_weather.py", line 118, in load_model
+    self.preprocessor.feature_columns = joblib.load(FEATURE_COLUMNS_SAVE_PATH)
+                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andre\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\joblib\numpy_pickle.py", line 749, in load
+    obj = _unpickle(
+        fobj,
+    ...<2 lines>...
+        mmap_mode=validated_mmap_mode,
+    )
+  File "C:\Users\andre\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\joblib\numpy_pickle.py", line 626, in _unpickle
+    obj = unpickler.load()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\pickle.py", line 1256, in load
+    dispatch[key[0]](self)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\pickle.py", line 1474, in load_tuple
+    items = self.pop_mark()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\pickle.py", line 1263, in pop_mark
+    self.stack = self.metastack.pop()
+                 ~~~~~~~~~~~~~~~~~~^^
+IndexError: pop from empty list
+
+2025-10-05 01:59:53,738 - ERROR - Error en pronostico: No se pudo cargar el modelo de predicción.

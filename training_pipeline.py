@@ -71,12 +71,9 @@ class WeatherTrainingPipeline:
             if end_date is None:
                 end_date = pd.Timestamp.now()
             if start_date is None:
-                # Si datos sintéticos están habilitados, usar período corto
+                # Si datos sintéticos están habilitados, usar período configurado
                 if SYNTHETIC_CONFIG["enabled"]:
                     training_days = SYNTHETIC_CONFIG["training_period_days"]
-                    if SYNTHETIC_CONFIG.get("force_synthetic", False):
-                        training_days = 1  # Solo 1 día cuando está forzado
-                        logger.info("Modo sintético forzado: usando 1 día de datos")
                     start_date = end_date - pd.DateOffset(days=training_days)
                     logger.info(f"Usando datos sintéticos con período de {training_days} días")
                 else:
@@ -219,7 +216,9 @@ class WeatherTrainingPipeline:
             return self.trainer
 
         except Exception as e:
+            import traceback
             logger.error(f"Error entrenando modelo: {e}")
+            logger.error(f"Traceback completo:\n{traceback.format_exc()}")
             return None
 
     def _show_training_results(self, history: Dict[str, Any]):

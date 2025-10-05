@@ -115,7 +115,11 @@ class WeatherPredictor:
 
             # Cargar columnas de características
             if FEATURE_COLUMNS_SAVE_PATH.exists():
-                self.preprocessor.feature_columns = joblib.load(FEATURE_COLUMNS_SAVE_PATH)
+                try:
+                    self.preprocessor.feature_columns = joblib.load(FEATURE_COLUMNS_SAVE_PATH)
+                except Exception as e:
+                    logger.warning(f"Error cargando columnas de características de {FEATURE_COLUMNS_SAVE_PATH}: {e}. Usando lista vacía.")
+                    self.preprocessor.feature_columns = []
                 logger.info(f"Columnas de features cargadas: {len(self.preprocessor.feature_columns)} columnas")
             else:
                 logger.warning(f"Archivo de columnas no encontrado: {FEATURE_COLUMNS_SAVE_PATH}")
@@ -442,13 +446,16 @@ class WeatherPredictor:
                 time = step['time']
                 temp = step['temp']
                 rain = step['precipitation_mm']
+                humidity = step.get('humidity', 0)
+                wind_speed = step.get('wind_speed', 0)
+                pressure = step.get('pressure', 0)
                 desc = step['desc']
 
                 # Formato visual
                 rain_icon = "LLUVIA" if rain > 0.1 else "SOLEADO"
                 rain_text = f"{rain:.1f}mm" if rain > 0 else "0.0mm"
 
-                print("15s")
+                print(f"{time:>8} | {temp:>5.1f}C | {rain_text:>7} | {humidity:>4.0f}% | {wind_speed:>4.1f}m/s | {pressure:>6.0f}hPa | {desc}")
 
             print("-"*60)
             print("El modelo predice cada 15 minutos hasta 6 horas en el futuro")

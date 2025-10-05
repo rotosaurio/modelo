@@ -1,0 +1,5 @@
+2025-10-04 21:11:39,524 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:11:39,525 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:11:39,531 - INFO - Logging configurado. Archivo: C:\Users\andre\OneDrive\Desktop\modelospaceapps\logs\training_20251004_211139.log
+2025-10-04 21:11:39,532 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:11:39,537 - ERROR - Error ejecutando comando list: 'charmap' codec can't encode character '\U0001f4cd' in position 0: character maps to <undefined>

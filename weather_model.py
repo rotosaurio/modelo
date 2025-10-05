@@ -322,7 +322,7 @@ class ModelTrainer:
 
             total_loss += loss.item()
 
-        return total_loss / len(train_loader)
+        return total_loss / len(train_loader) if len(train_loader) > 0 else 0.0
 
     def validate(self, val_loader) -> float:
         """Valida el modelo"""
@@ -337,7 +337,7 @@ class ModelTrainer:
                 loss = self.weighted_mse_loss(outputs, batch_y)
                 total_loss += loss.item()
 
-        return total_loss / len(val_loader)
+        return total_loss / len(val_loader) if len(val_loader) > 0 else 0.0
 
     def train(self, train_loader, val_loader, num_epochs: int = 100,
              patience: int = 10) -> Dict[str, Any]:

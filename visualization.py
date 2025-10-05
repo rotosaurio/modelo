@@ -297,10 +297,10 @@ class WeatherVisualizer:
                 desc = step['desc']
 
                 # Formato visual para lluvia
-                rain_icon = "🌧️" if rain > 0.1 else "☀️"
+                rain_icon = "LLUVIA" if rain > 0.1 else "SOLEADO"
                 rain_str = f"{rain:.1f}mm"
 
-                table_lines.append("<15")
+                table_lines.append(f"{time:>10} | {temp:>5.1f}C | {rain_str:>7} {rain_icon:>8} | {hum:>4.0f}% | {wind:>4.1f}m/s | {pres:>6.0f}hPa | {clouds:>4.0f}% | {desc}")
 
             table_lines.append("-"*80)
             table_lines.append("Cada fila representa 15 minutos en el futuro")

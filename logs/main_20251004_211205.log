@@ -1,0 +1,45 @@
+2025-10-04 21:12:05,827 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:12:05,828 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:12:05,831 - INFO - Logging configurado. Archivo: C:\Users\andre\OneDrive\Desktop\modelospaceapps\logs\training_20251004_211205.log
+2025-10-04 21:12:05,831 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 21:12:05,834 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 21:12:05,834 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 21:12:05,834 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 21:12:05,837 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 21:12:05,838 - INFO - Cargando modelo y artefactos...
+2025-10-04 21:12:05,854 - INFO - Información del dataset cargada: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\dataset_info.pkl
+2025-10-04 21:12:05,981 - INFO - Hiperparámetros cargados: input_size=20, hidden_size=16, model_type=simple
+2025-10-04 21:12:18,860 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 21:12:18,923 - INFO - Validando hiperparámetros: guardados={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}, actuales={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}
+2025-10-04 21:12:18,928 - INFO - Modelo cargado correctamente: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\weather_model.pt
+2025-10-04 21:12:18,929 - INFO - Escalador cargado: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\scaler.pkl
+2025-10-04 21:12:18,929 - WARNING - Archivo de columnas no encontrado: C:\Users\andre\OneDrive\Desktop\modelospaceapps\models\feature_columns.pkl
+2025-10-04 21:12:18,929 - INFO - Modelo y artefactos cargados correctamente
+2025-10-04 21:12:18,930 - INFO - Generando pronóstico para código postal: 31125
+2025-10-04 21:12:18,931 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 21:12:18,931 - INFO - Coordenadas encontradas: (28.632, -106.069)
+2025-10-04 21:12:18,931 - INFO - Creando dataset de predicción para 31125
+2025-10-04 21:12:18,931 - INFO - Recopilando datos históricos para predicción en 31125
+2025-10-04 21:12:18,941 - INFO - Usando fechas históricas: 2024-09-15 12:00:00 a 2024-09-15 18:00:00
+2025-10-04 21:12:18,941 - WARNING - Error obteniendo datos ERA5 históricos: 'ERA5DataDownloader' object has no attribute 'get_data'
+2025-10-04 21:12:18,941 - WARNING - Error obteniendo datos IMERG históricos: 'IMERGDataDownloader' object has no attribute 'get_data'
+2025-10-04 21:12:18,941 - WARNING - Error obteniendo datos de estaciones históricos: 'MeteostatDataDownloader' object has no attribute 'get_data'
+2025-10-04 21:12:18,941 - WARNING - No se pudieron obtener datos históricos de ninguna fuente, usando datos sintéticos
+2025-10-04 21:12:18,941 - INFO - Generando datos sintéticos para (28.632, -106.069) del 2024-09-15 al 2024-09-15
+2025-10-04 21:12:18,968 - INFO - Generados 25 registros sintéticos para región 'chihuahua_city'
+2025-10-04 21:12:18,969 - INFO - Datos sintéticos generados para predicción: 25 registros
+2025-10-04 21:12:18,971 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 21:12:18,985 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 21:12:18,990 - INFO - Características de lag creadas: 36 variables
+2025-10-04 21:12:19,012 - INFO - Características rolling creadas: 108 variables
+2025-10-04 21:12:19,022 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 21:12:19,029 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 21:12:19,045 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 21:12:19,046 - INFO - Total de características creadas: 275
+2025-10-04 21:12:19,046 - INFO - Dataset final: 25 filas x 284 columnas
+2025-10-04 21:12:19,047 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 21:12:19,067 - INFO - Dataset de predicción creado: torch.Size([1, 24, 20])
+2025-10-04 21:12:19,117 - WARNING - No hay escalador disponible, usando valores por defecto
+2025-10-04 21:12:19,118 - INFO - Desnormalización básica aplicada con rangos típicos
+2025-10-04 21:12:19,119 - INFO - Pronóstico generado exitosamente para 31125
+2025-10-04 21:12:19,119 - INFO - Pronostico generado exitosamente

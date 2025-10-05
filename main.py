@@ -150,14 +150,14 @@ class WeatherPredictionSystem:
             logger.warning("No hay códigos postales disponibles. Configure la base de datos primero.")
             return
 
-        print(f"📍 Códigos postales disponibles en Chihuahua: {len(codes)}")
+        print(f"Codigos postales disponibles en Chihuahua: {len(codes)}")
         print("-" * 50)
 
         codes_to_show = codes[:limit] if limit else codes
         for i, code in enumerate(codes_to_show, 1):
             coords = self.coord_manager.get_coordinates(code)
             if coords:
-                print("5")
+                print(f"{i:3}. {code} - Lat: {coords[0]:>7.3f}, Lon: {coords[1]:>8.3f}")
 
         if limit and len(codes) > limit:
             print(f"... y {len(codes) - limit} más")
