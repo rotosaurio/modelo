@@ -1,0 +1,12 @@
+2025-10-04 17:45:44,600 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_174544.log
+2025-10-04 17:45:44,602 - INFO - CONFIGURANDO BASE DE DATOS POSTAL
+2025-10-04 17:45:44,602 - INFO - Descargando datos de códigos postales de Chihuahua...
+2025-10-04 17:45:44,602 - INFO - Construyendo base de datos de coordenadas postales...
+2025-10-04 17:45:44,602 - INFO - Descargando datos postales desde: https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/carta/CP_2023_v1_csv.zip
+2025-10-04 17:45:45,339 - INFO - Datos descargados: C:\Users\USER\Desktop\backspaceaps\data\postal_codes\cp_chihuahua.zip
+2025-10-04 17:45:45,351 - ERROR - Error extrayendo datos postales: File is not a zip file
+2025-10-04 17:45:45,351 - WARNING - Descarga automática falló, usando base de datos manual de Chihuahua...
+2025-10-04 17:45:45,351 - INFO - Creada base de datos manual con 34 códigos postales
+2025-10-04 17:45:45,352 - INFO - Guardadas 34 coordenadas en caché
+2025-10-04 17:45:45,352 - INFO - Base de datos construida con 34 códigos postales manuales
+2025-10-04 17:45:45,353 - INFO - Base de datos postal configurada con 34 codigos postales

@@ -1,0 +1,19 @@
+2025-10-04 18:37:52,992 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:37:52,993 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:37:52,995 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_183752.log
+2025-10-04 18:37:52,995 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:37:52,998 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:37:52,998 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 18:37:52,998 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:37:53,000 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:37:53,000 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:37:53,001 - INFO - Información del dataset cargada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:37:53,104 - INFO - Hiperparámetros cargados: input_size=20, hidden_size=16, model_type=simple
+2025-10-04 18:37:53,105 - ERROR - Error inesperado cargando modelo: name 'MODEL_CONFIG' is not defined
+2025-10-04 18:37:53,107 - ERROR - Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\backspaceaps\predict_weather.py", line 89, in load_model
+    hidden_size = hyperparams.get('hidden_size', MODEL_CONFIG['hidden_size'] // 2 if model_type == 'simple' else MODEL_CONFIG['hidden_size'])
+                                                 ^^^^^^^^^^^^
+NameError: name 'MODEL_CONFIG' is not defined
+
+2025-10-04 18:37:53,109 - ERROR - Error en pronostico: No se pudo cargar el modelo de predicción.

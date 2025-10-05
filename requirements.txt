@@ -1,0 +1,39 @@
+# Librerías básicas de ciencia de datos
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Manejo de datos geoespaciales
+geopandas>=0.13.0
+shapely>=2.0.0
+
+# Datos climáticos
+xarray>=2023.0.0
+netCDF4>=1.6.0
+meteostat>=1.6.0
+
+# APIs y descargas
+requests>=2.31.0
+cdsapi>=0.6.0  # Para Copernicus CDS API (ERA5)
+pydap>=3.4.0   # Para NASA GPM IMERG
+
+# Machine Learning
+scikit-learn>=1.3.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Visualización
+matplotlib>=3.7.0
+plotly>=5.15.0
+seaborn>=0.12.0
+
+# Utilidades
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+pytz>=2023.0.0
+
+# Procesamiento de fechas
+python-dateutil>=2.8.0
+
+# Archivos comprimidos
+py7zr>=0.20.0  # Para archivos .7z de INEGI

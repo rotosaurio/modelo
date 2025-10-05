@@ -1,0 +1,262 @@
+2025-10-04 18:10:30,139 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,140 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,142 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_181030.log
+2025-10-04 18:10:30,142 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,144 - INFO - ENTRENANDO MODELO DE PREDICCION
+2025-10-04 18:10:30,145 - INFO - CONFIGURANDO BASE DE DATOS POSTAL
+2025-10-04 18:10:30,145 - INFO - Base de datos postal ya configurada (34 codigos postales)
+2025-10-04 18:10:30,145 - INFO - === INICIANDO PIPELINE COMPLETO DE ENTRENAMIENTO ===
+2025-10-04 18:10:30,145 - INFO - === PREPARANDO DATOS DE ENTRENAMIENTO ===
+2025-10-04 18:10:30,146 - INFO - Modo sintético forzado: usando 1 día de datos
+2025-10-04 18:10:30,146 - INFO - Usando datos sintéticos con período de 1 días
+2025-10-04 18:10:30,146 - INFO - Período de entrenamiento: 2025-10-03 - 2025-10-04
+2025-10-04 18:10:30,147 - INFO - Seleccionados 10 códigos postales estratificados
+2025-10-04 18:10:30,147 - INFO - Seleccionados 10 códigos postales para entrenamiento
+2025-10-04 18:10:30,147 - INFO - Creando dataset de entrenamiento con 10 códigos postales
+2025-10-04 18:10:30,147 - INFO - Procesando código postal 31000 (1/10)
+2025-10-04 18:10:30,147 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,147 - INFO - Recopilando datos climáticos para 31000 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,147 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,147 - INFO - Generando datos sintéticos para (28.632, -106.069) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,158 - INFO - Generados 97 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:10:30,158 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,158 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,163 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,171 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,201 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,214 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,224 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,245 - INFO - Características específicas del clima creadas: 10 variables
+2025-10-04 18:10:30,245 - INFO - Total de características creadas: 277
+2025-10-04 18:10:30,245 - INFO - Dataset final: 97 filas x 286 columnas
+2025-10-04 18:10:30,246 - INFO - Características seleccionadas: 20 de 286
+2025-10-04 18:10:30,251 - INFO - Escalador ajustado con 20 variables
+2025-10-04 18:10:30,258 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,260 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,261 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,261 - INFO - Secuencias creadas para 31000: 40
+2025-10-04 18:10:30,261 - INFO - Procesando código postal 31700 (2/10)
+2025-10-04 18:10:30,262 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,262 - INFO - Recopilando datos climáticos para 31700 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,262 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,262 - INFO - Generando datos sintéticos para (30.417, -107.917) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,273 - INFO - Generados 97 registros sintéticos para región 'mountains'
+2025-10-04 18:10:30,273 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,274 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,278 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,288 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,314 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,333 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,342 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,370 - INFO - Características específicas del clima creadas: 9 variables
+2025-10-04 18:10:30,371 - INFO - Total de características creadas: 276
+2025-10-04 18:10:30,371 - INFO - Dataset final: 97 filas x 285 columnas
+2025-10-04 18:10:30,373 - INFO - Características seleccionadas: 20 de 285
+2025-10-04 18:10:30,380 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,383 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,385 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,386 - INFO - Secuencias creadas para 31700: 40
+2025-10-04 18:10:30,386 - INFO - Procesando código postal 31800 (3/10)
+2025-10-04 18:10:30,387 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,387 - INFO - Recopilando datos climáticos para 31800 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,387 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,387 - INFO - Generando datos sintéticos para (28.632, -106.069) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,399 - INFO - Generados 97 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:10:30,400 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,401 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,407 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,414 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,459 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,486 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,499 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,523 - INFO - Características específicas del clima creadas: 9 variables
+2025-10-04 18:10:30,524 - INFO - Total de características creadas: 276
+2025-10-04 18:10:30,524 - INFO - Dataset final: 97 filas x 285 columnas
+2025-10-04 18:10:30,525 - INFO - Características seleccionadas: 20 de 285
+2025-10-04 18:10:30,536 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,538 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,541 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,541 - INFO - Secuencias creadas para 31800: 40
+2025-10-04 18:10:30,542 - INFO - Procesando código postal 31600 (4/10)
+2025-10-04 18:10:30,542 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,543 - INFO - Recopilando datos climáticos para 31600 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,543 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,543 - INFO - Generando datos sintéticos para (28.632, -106.069) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,556 - INFO - Generados 97 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:10:30,557 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,558 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,563 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,571 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,600 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,617 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,627 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,646 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 18:10:30,647 - INFO - Total de características creadas: 275
+2025-10-04 18:10:30,647 - INFO - Dataset final: 97 filas x 284 columnas
+2025-10-04 18:10:30,648 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 18:10:30,656 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,658 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,659 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,659 - INFO - Secuencias creadas para 31600: 40
+2025-10-04 18:10:30,659 - INFO - Procesando código postal 32400 (5/10)
+2025-10-04 18:10:30,660 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,660 - INFO - Recopilando datos climáticos para 32400 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,660 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,660 - INFO - Generando datos sintéticos para (31.690, -106.424) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,672 - INFO - Generados 97 registros sintéticos para región 'juarez'
+2025-10-04 18:10:30,672 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,672 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,677 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,685 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,724 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,739 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,748 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,773 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 18:10:30,773 - INFO - Total de características creadas: 275
+2025-10-04 18:10:30,774 - INFO - Dataset final: 97 filas x 284 columnas
+2025-10-04 18:10:30,775 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 18:10:30,787 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,789 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,790 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,790 - INFO - Secuencias creadas para 32400: 40
+2025-10-04 18:10:30,790 - INFO - Procesando código postal 32800 (6/10)
+2025-10-04 18:10:30,791 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,791 - INFO - Recopilando datos climáticos para 32800 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,791 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,791 - INFO - Generando datos sintéticos para (30.617, -106.517) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,804 - INFO - Generados 97 registros sintéticos para región 'mountains'
+2025-10-04 18:10:30,805 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,805 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,809 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,816 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,842 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,859 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,870 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,890 - INFO - Características específicas del clima creadas: 10 variables
+2025-10-04 18:10:30,891 - INFO - Total de características creadas: 277
+2025-10-04 18:10:30,891 - INFO - Dataset final: 97 filas x 286 columnas
+2025-10-04 18:10:30,892 - INFO - Características seleccionadas: 20 de 286
+2025-10-04 18:10:30,897 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:30,900 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:30,901 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:30,902 - INFO - Secuencias creadas para 32800: 40
+2025-10-04 18:10:30,902 - INFO - Procesando código postal 32300 (7/10)
+2025-10-04 18:10:30,903 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:30,903 - INFO - Recopilando datos climáticos para 32300 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,903 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:30,903 - INFO - Generando datos sintéticos para (31.690, -106.424) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:30,912 - INFO - Generados 97 registros sintéticos para región 'juarez'
+2025-10-04 18:10:30,913 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:30,913 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:30,921 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:30,926 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:30,954 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:30,973 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:30,981 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:30,997 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 18:10:30,998 - INFO - Total de características creadas: 275
+2025-10-04 18:10:30,998 - INFO - Dataset final: 97 filas x 284 columnas
+2025-10-04 18:10:31,001 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 18:10:31,007 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:31,008 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:31,009 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:31,010 - INFO - Secuencias creadas para 32300: 40
+2025-10-04 18:10:31,010 - INFO - Procesando código postal 32200 (8/10)
+2025-10-04 18:10:31,010 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:31,010 - INFO - Recopilando datos climáticos para 32200 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,011 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:31,011 - INFO - Generando datos sintéticos para (31.690, -106.424) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,021 - INFO - Generados 97 registros sintéticos para región 'juarez'
+2025-10-04 18:10:31,021 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:31,021 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:31,026 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:31,033 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:31,062 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:31,076 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:31,086 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:31,103 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 18:10:31,103 - INFO - Total de características creadas: 275
+2025-10-04 18:10:31,104 - INFO - Dataset final: 97 filas x 284 columnas
+2025-10-04 18:10:31,105 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 18:10:31,110 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:31,111 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:31,112 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:31,112 - INFO - Secuencias creadas para 32200: 40
+2025-10-04 18:10:31,113 - INFO - Procesando código postal 33630 (9/10)
+2025-10-04 18:10:31,113 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:31,113 - INFO - Recopilando datos climáticos para 33630 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,113 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:31,113 - INFO - Generando datos sintéticos para (26.767, -105.583) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,123 - INFO - Generados 97 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:10:31,124 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:31,124 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:31,128 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:31,135 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:31,172 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:31,188 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:31,195 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:31,217 - INFO - Características específicas del clima creadas: 10 variables
+2025-10-04 18:10:31,217 - INFO - Total de características creadas: 277
+2025-10-04 18:10:31,217 - INFO - Dataset final: 97 filas x 286 columnas
+2025-10-04 18:10:31,220 - INFO - Características seleccionadas: 20 de 286
+2025-10-04 18:10:31,225 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:31,227 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:31,229 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:31,229 - INFO - Secuencias creadas para 33630: 40
+2025-10-04 18:10:31,229 - INFO - Procesando código postal 33200 (10/10)
+2025-10-04 18:10:31,230 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:10:31,230 - INFO - Recopilando datos climáticos para 33200 del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,230 - INFO - Usando datos sintéticos forzados (modo desarrollo)
+2025-10-04 18:10:31,230 - INFO - Generando datos sintéticos para (27.033, -106.083) del 2025-10-03 al 2025-10-04
+2025-10-04 18:10:31,242 - INFO - Generados 97 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:10:31,242 - INFO - Datos sintéticos generados: 97 registros
+2025-10-04 18:10:31,243 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:10:31,247 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:10:31,255 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:10:31,279 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:10:31,293 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:10:31,303 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:10:31,320 - INFO - Características específicas del clima creadas: 9 variables
+2025-10-04 18:10:31,320 - INFO - Total de características creadas: 276
+2025-10-04 18:10:31,320 - INFO - Dataset final: 97 filas x 285 columnas
+2025-10-04 18:10:31,321 - INFO - Características seleccionadas: 20 de 285
+2025-10-04 18:10:31,326 - INFO - Limpiando datos para conversión a tensores...
+2025-10-04 18:10:31,327 - INFO - Datos preparados: (97, 20), tipo: float32
+2025-10-04 18:10:31,329 - INFO - Secuencias preparadas: 50 muestras, entrada (50, 24, 20), salida (50, 24, 6)
+2025-10-04 18:10:31,329 - INFO - Secuencias creadas para 33200: 40
+2025-10-04 18:10:31,330 - INFO - Dataset combinado: 400 secuencias totales
+2025-10-04 18:10:31,338 - INFO - Dataset de entrenamiento creado exitosamente:
+2025-10-04 18:10:31,339 - INFO -   Train: 279 secuencias
+2025-10-04 18:10:31,339 - INFO -   Val: 61 secuencias
+2025-10-04 18:10:31,339 - INFO -   Test: 60 secuencias
+2025-10-04 18:10:31,339 - INFO -   Features: 20, Targets: 6
+2025-10-04 18:10:31,340 - INFO - Información del dataset guardada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:10:31,342 - INFO - === ESTADÍSTICAS DEL DATASET ===
+2025-10-04 18:10:31,343 - INFO - Características de entrada: 20
+2025-10-04 18:10:31,343 - INFO - Variables objetivo: 6
+2025-10-04 18:10:31,343 - INFO - Pasos de entrada: 24 (6 horas)
+2025-10-04 18:10:31,343 - INFO - Pasos de salida: 24 (6 horas)
+2025-10-04 18:10:31,343 - INFO - TRAIN_DATASET:
+2025-10-04 18:10:31,343 - INFO -   Muestras: 279
+2025-10-04 18:10:31,343 - INFO - .6f
+2025-10-04 18:10:31,344 - INFO - .6f
+2025-10-04 18:10:31,344 - INFO - VAL_DATASET:
+2025-10-04 18:10:31,344 - INFO -   Muestras: 61
+2025-10-04 18:10:31,344 - INFO - .6f
+2025-10-04 18:10:31,344 - INFO - .6f
+2025-10-04 18:10:31,344 - INFO - TEST_DATASET:
+2025-10-04 18:10:31,344 - INFO -   Muestras: 60
+2025-10-04 18:10:31,344 - INFO - .6f
+2025-10-04 18:10:31,344 - INFO - .6f
+2025-10-04 18:10:31,345 - INFO - === ENTRENANDO MODELO ===
+2025-10-04 18:10:31,354 - INFO - Modelo WeatherPredictor creado:
+2025-10-04 18:10:31,355 - INFO -   Input size: 20
+2025-10-04 18:10:31,355 - INFO -   Hidden size: 64
+2025-10-04 18:10:31,355 - INFO -   Layers: 2
+2025-10-04 18:10:31,355 - INFO -   Bidirectional: False
+2025-10-04 18:10:31,355 - INFO -   Output steps: 24
+2025-10-04 18:10:31,355 - INFO -   Targets: 6
+2025-10-04 18:10:33,261 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 18:10:33,262 - INFO - Comenzando entrenamiento por 50 épocas...
+2025-10-04 18:10:33,299 - ERROR - Error entrenando modelo: Sizes of tensors must match except in dimension 2. Expected size 64 but got size 1 for tensor number 1 in the list.
+2025-10-04 18:10:33,300 - ERROR - Error entrenando modelo

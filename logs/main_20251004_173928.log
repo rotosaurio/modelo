@@ -1,0 +1,7 @@
+2025-10-04 17:39:28,292 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_173928.log
+2025-10-04 17:39:28,297 - INFO - Descargando datos de códigos postales de Chihuahua...
+2025-10-04 17:39:28,297 - INFO - Construyendo base de datos de coordenadas postales...
+2025-10-04 17:39:28,297 - INFO - Descargando datos postales desde: https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/carta/CP_2023_v1_csv.zip
+2025-10-04 17:39:29,362 - INFO - Datos descargados: C:\Users\USER\Desktop\backspaceaps\data\postal_codes\cp_chihuahua.zip
+2025-10-04 17:39:29,367 - ERROR - Error extrayendo datos postales: File is not a zip file
+2025-10-04 17:39:29,371 - ERROR - Error ejecutando comando setup: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>

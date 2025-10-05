@@ -1,0 +1,9 @@
+2025-10-04 18:04:03,426 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:04:03,426 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:04:03,429 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_180403.log
+2025-10-04 18:04:03,429 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:04:03,431 - INFO - GENERANDO PRONOSTICO PARA 31100
+2025-10-04 18:04:03,431 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:04:03,431 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:04:03,432 - ERROR - Archivo de modelo no encontrado: C:\Users\USER\Desktop\backspaceaps\models\weather_model.pt
+2025-10-04 18:04:03,434 - ERROR - Error en pronostico: No se pudo cargar el modelo de predicción.

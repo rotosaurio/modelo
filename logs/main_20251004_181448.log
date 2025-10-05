@@ -1,0 +1,89 @@
+2025-10-04 18:14:48,855 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:14:48,857 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:14:48,862 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_181448.log
+2025-10-04 18:14:48,863 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:14:48,869 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:14:48,869 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 18:14:48,870 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:14:48,871 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:14:48,871 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:14:48,873 - INFO - Información del dataset cargada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:14:51,972 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 18:14:52,083 - ERROR - Error cargando modelo: Error(s) in loading state_dict for WeatherPredictorSimplified:
+	size mismatch for encoder.weight_ih_l0: copying a param with shape torch.Size([64, 20]) from checkpoint, the shape in current model is torch.Size([128, 20]).
+	size mismatch for encoder.weight_hh_l0: copying a param with shape torch.Size([64, 16]) from checkpoint, the shape in current model is torch.Size([128, 32]).
+	size mismatch for encoder.bias_ih_l0: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for encoder.bias_hh_l0: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for temporal_decoders.0.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.0.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.0.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.1.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.1.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.1.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.2.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.2.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.2.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.3.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.3.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.3.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.4.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.4.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.4.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.5.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.5.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.5.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.6.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.6.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.6.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.7.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.7.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.7.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.8.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.8.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.8.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.9.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.9.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.9.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.10.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.10.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.10.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.11.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.11.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.11.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.12.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.12.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.12.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.13.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.13.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.13.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.14.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.14.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.14.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.15.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.15.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.15.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.16.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.16.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.16.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.17.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.17.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.17.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.18.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.18.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.18.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.19.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.19.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.19.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.20.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.20.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.20.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.21.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.21.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.21.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.22.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.22.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.22.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+	size mismatch for temporal_decoders.23.0.weight: copying a param with shape torch.Size([16, 16]) from checkpoint, the shape in current model is torch.Size([32, 32]).
+	size mismatch for temporal_decoders.23.0.bias: copying a param with shape torch.Size([16]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for temporal_decoders.23.2.weight: copying a param with shape torch.Size([6, 16]) from checkpoint, the shape in current model is torch.Size([6, 32]).
+2025-10-04 18:14:52,084 - ERROR - Error en pronostico: No se pudo cargar el modelo de predicción.

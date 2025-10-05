@@ -1,0 +1,30 @@
+2025-10-04 18:42:58,779 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:42:58,780 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:42:58,782 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_184258.log
+2025-10-04 18:42:58,783 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:42:58,786 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:42:58,786 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 18:42:58,787 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:42:58,787 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:42:58,787 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:42:58,788 - INFO - Información del dataset cargada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:42:58,899 - INFO - Hiperparámetros cargados: input_size=20, hidden_size=16, model_type=simple
+2025-10-04 18:43:01,575 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 18:43:01,703 - INFO - Validando hiperparámetros: guardados={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}, actuales={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}
+2025-10-04 18:43:01,709 - INFO - Modelo cargado correctamente: C:\Users\USER\Desktop\backspaceaps\models\weather_model.pt
+2025-10-04 18:43:01,710 - INFO - Modelo y artefactos cargados correctamente
+2025-10-04 18:43:01,712 - INFO - Generando pronóstico para código postal: 31125
+2025-10-04 18:43:01,712 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:43:01,712 - INFO - Coordenadas encontradas: (28.632, -106.069)
+2025-10-04 18:43:01,713 - INFO - Creando dataset de predicción para 31125
+2025-10-04 18:43:01,713 - INFO - Recopilando datos para predicción en 31125
+2025-10-04 18:43:01,714 - INFO - Descargando datos IMERG recientes...
+2025-10-04 18:43:01,714 - INFO - Bearer token NASA encontrado en variables de entorno
+2025-10-04 18:43:01,714 - INFO - Sesión NASA configurada correctamente con bearer token
+2025-10-04 18:43:01,715 - INFO - Sesión NASA configurada correctamente con bearer token
+2025-10-04 18:43:01,715 - INFO - Descargando datos IMERG para (28.632, -106.069) del 2025-10-04 12:43:01.714327 al 2025-10-05 00:43:01.714327
+2025-10-04 18:43:03,687 - WARNING - Error descargando datos para 2025-10-04 12:43:01.714327: HTTP Error occurred 404 Client Error: 404 for url: https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S124301-E124301.RT-H5.dds - Failed to fetch data from `https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S124301-E124301.RT-H5.dds`
+2025-10-04 18:43:06,049 - WARNING - Error descargando datos para 2025-10-04 13:13:01.714327: HTTP Error occurred 404 Client Error: 404 for url: https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S131301-E131301.RT-H5.dds - Failed to fetch data from `https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S131301-E131301.RT-H5.dds`
+2025-10-04 18:43:09,371 - WARNING - Error descargando datos para 2025-10-04 13:43:01.714327: HTTP Error occurred 404 Client Error: 404 for url: https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S134301-E134301.RT-H5.dds - Failed to fetch data from `https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S134301-E134301.RT-H5.dds`
+2025-10-04 18:43:12,187 - WARNING - Error descargando datos para 2025-10-04 14:13:01.714327: HTTP Error occurred 404 Client Error: 404 for url: https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S141301-E141301.RT-H5.dds - Failed to fetch data from `https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S141301-E141301.RT-H5.dds`
+2025-10-04 18:43:15,484 - WARNING - Error descargando datos para 2025-10-04 14:43:01.714327: HTTP Error occurred 404 Client Error: 404 for url: https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S144301-E144301.RT-H5.dds - Failed to fetch data from `https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.06/2025/10/GPM_3IMERGHH.06_20251004-S144301-E144301.RT-H5.dds`

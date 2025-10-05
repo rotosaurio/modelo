@@ -1,0 +1,13 @@
+2025-10-04 18:12:28,432 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:12:28,432 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:12:28,433 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_181228.log
+2025-10-04 18:12:28,434 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:12:28,437 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:12:28,438 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 18:12:28,438 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:12:28,438 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:12:28,439 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:12:28,439 - INFO - Información del dataset cargada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:12:30,412 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 18:12:30,412 - ERROR - Error cargando modelo: name 'Path' is not defined
+2025-10-04 18:12:30,412 - ERROR - Error en pronostico: No se pudo cargar el modelo de predicción.

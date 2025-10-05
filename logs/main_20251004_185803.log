@@ -1,0 +1,45 @@
+2025-10-04 18:58:03,744 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:58:03,745 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:58:03,747 - INFO - Logging configurado. Archivo: C:\Users\USER\Desktop\backspaceaps\logs\training_20251004_185803.log
+2025-10-04 18:58:03,747 - INFO - Cargadas 34 coordenadas desde caché
+2025-10-04 18:58:03,750 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:58:03,750 - INFO - GENERANDO PRONOSTICO PARA 31125
+2025-10-04 18:58:03,751 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:58:03,751 - INFO - Coordenadas encontradas: 28.632, -106.069
+2025-10-04 18:58:03,752 - INFO - Cargando modelo y artefactos...
+2025-10-04 18:58:03,753 - INFO - Información del dataset cargada: C:\Users\USER\Desktop\backspaceaps\models\dataset_info.pkl
+2025-10-04 18:58:03,936 - INFO - Hiperparámetros cargados: input_size=20, hidden_size=16, model_type=simple
+2025-10-04 18:58:06,676 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 18:58:06,828 - INFO - Validando hiperparámetros: guardados={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}, actuales={'input_size': 20, 'hidden_size': 16, 'num_layers': 1, 'output_steps': 24, 'num_targets': 6, 'model_class': 'WeatherPredictorSimplified'}
+2025-10-04 18:58:06,833 - INFO - Modelo cargado correctamente: C:\Users\USER\Desktop\backspaceaps\models\weather_model.pt
+2025-10-04 18:58:06,835 - INFO - Modelo y artefactos cargados correctamente
+2025-10-04 18:58:06,837 - INFO - Generando pronóstico para código postal: 31125
+2025-10-04 18:58:06,838 - INFO - Usando aproximación para código postal 31125 (Chihuahua)
+2025-10-04 18:58:06,838 - INFO - Coordenadas encontradas: (28.632, -106.069)
+2025-10-04 18:58:06,838 - INFO - Creando dataset de predicción para 31125
+2025-10-04 18:58:06,838 - INFO - Recopilando datos históricos para predicción en 31125
+2025-10-04 18:58:06,838 - INFO - Usando fechas históricas: 2024-09-15 12:00:00 a 2024-09-15 18:00:00
+2025-10-04 18:58:06,839 - WARNING - Error obteniendo datos ERA5 históricos: 'ERA5DataDownloader' object has no attribute 'get_data'
+2025-10-04 18:58:06,839 - WARNING - Error obteniendo datos IMERG históricos: 'IMERGDataDownloader' object has no attribute 'get_data'
+2025-10-04 18:58:06,839 - WARNING - Error obteniendo datos de estaciones históricos: 'MeteostatDataDownloader' object has no attribute 'get_data'
+2025-10-04 18:58:06,840 - WARNING - No se pudieron obtener datos históricos de ninguna fuente, usando datos sintéticos
+2025-10-04 18:58:06,840 - INFO - Generando datos sintéticos para (28.632, -106.069) del 2024-09-15 al 2024-09-15
+2025-10-04 18:58:06,846 - INFO - Generados 25 registros sintéticos para región 'chihuahua_city'
+2025-10-04 18:58:06,846 - INFO - Datos sintéticos generados para predicción: 25 registros
+2025-10-04 18:58:06,847 - INFO - Creando características derivadas para 9 variables base
+2025-10-04 18:58:06,853 - INFO - Características temporales creadas: 15 nuevas variables
+2025-10-04 18:58:06,861 - INFO - Características de lag creadas: 36 variables
+2025-10-04 18:58:06,897 - INFO - Características rolling creadas: 108 variables
+2025-10-04 18:58:06,927 - INFO - Características acumuladas creadas: 54 variables
+2025-10-04 18:58:06,939 - INFO - Características de diferencias creadas: 54 variables
+2025-10-04 18:58:06,970 - INFO - Características específicas del clima creadas: 8 variables
+2025-10-04 18:58:06,970 - INFO - Total de características creadas: 275
+2025-10-04 18:58:06,971 - INFO - Dataset final: 25 filas x 284 columnas
+2025-10-04 18:58:06,972 - INFO - Características seleccionadas: 20 de 284
+2025-10-04 18:58:07,016 - INFO - Dataset de predicción creado: torch.Size([1, 24, 20])
+2025-10-04 18:58:07,032 - ERROR - No hay escalador disponible para desnormalizar
+2025-10-04 18:58:07,033 - INFO - Pronóstico generado exitosamente para 31125
+2025-10-04 18:58:07,034 - INFO - Generando visualizaciones...
+2025-10-04 18:58:10,826 - INFO - Gráfico de pronóstico guardado: C:\Users\USER\Desktop\backspaceaps\logs\plots\forecast_31125_20251004_185808.png
+2025-10-04 18:58:12,779 - INFO - Línea temporal guardada: C:\Users\USER\Desktop\backspaceaps\logs\plots\timeline_31125_20251004_185811.png
+2025-10-04 18:58:12,832 - INFO - Pronostico generado exitosamente
