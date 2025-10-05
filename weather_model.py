@@ -405,6 +405,9 @@ class ModelTrainer:
             from config import MODEL_SAVE_PATH
             filepath = str(MODEL_SAVE_PATH)
 
+        from pathlib import Path
+        Path(filepath).parent.mkdir(parents=True, exist_ok=True)
+
         # Guardar hiperparámetros del modelo
         model_hyperparams = {
             'input_size': self.model.input_size,
@@ -415,13 +418,14 @@ class ModelTrainer:
             'model_class': self.model.__class__.__name__
         }
 
-        torch.save({
-            'model_state_dict': self.model.state_dict(),
-            'optimizer_state_dict': self.optimizer.state_dict(),
-            'scheduler_state_dict': self.scheduler.state_dict(),
-            'best_loss': self.best_loss,
-            'hyperparams': model_hyperparams
-        }, filepath)
+        with open(filepath, 'wb') as f:
+            torch.save({
+                'model_state_dict': self.model.state_dict(),
+                'optimizer_state_dict': self.optimizer.state_dict(),
+                'scheduler_state_dict': self.scheduler.state_dict(),
+                'best_loss': self.best_loss,
+                'hyperparams': model_hyperparams
+            }, f)
 
         logger.info(f"Modelo guardado con hiperparámetros: {filepath}")
 
