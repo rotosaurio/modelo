@@ -249,3 +249,5 @@
 2025-10-04 19:51:59,681 - INFO - .6f
 2025-10-04 19:51:59,681 - INFO - .6f
 2025-10-04 19:51:59,681 - INFO - === ENTRENANDO MODELO ===
+2025-10-04 19:52:03,830 - INFO - Trainer inicializado en dispositivo: cpu
+2025-10-04 19:52:03,830 - INFO - Comenzando entrenamiento por 50 épocas...
