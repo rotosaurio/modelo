@@ -106,12 +106,20 @@ class WeatherPredictor:
                 return False
 
             # Cargar escalador
-            self.preprocessor.scaler = joblib.load(SCALER_SAVE_PATH)
+            if SCALER_SAVE_PATH.exists():
+                self.preprocessor.scaler = joblib.load(SCALER_SAVE_PATH)
+                logger.info(f"Escalador cargado: {SCALER_SAVE_PATH}")
+            else:
+                logger.warning(f"Archivo de escalador no encontrado: {SCALER_SAVE_PATH}")
+                self.preprocessor.scaler = None
 
             # Cargar columnas de características
             if FEATURE_COLUMNS_SAVE_PATH.exists():
-                with open(FEATURE_COLUMNS_SAVE_PATH, 'r') as f:
-                    self.preprocessor.feature_columns = [line.strip() for line in f if line.strip()]
+                self.preprocessor.feature_columns = joblib.load(FEATURE_COLUMNS_SAVE_PATH)
+                logger.info(f"Columnas de features cargadas: {len(self.preprocessor.feature_columns)} columnas")
+            else:
+                logger.warning(f"Archivo de columnas no encontrado: {FEATURE_COLUMNS_SAVE_PATH}")
+                self.preprocessor.feature_columns = []
 
             logger.info("Modelo y artefactos cargados correctamente")
             self.is_loaded = True
